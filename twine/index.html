@@ -29,7 +29,8 @@ tw-story{
 (set: $TJ to true)
 (set: $HL to true)
 (set: $Crane to true)
-(set: $GW to true)</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="450,350" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fff3bf))(set: $strength to (prompt: &quot;Enter your strength (1-10):&quot;,&quot;5&quot;))(set: $stealthVar to (prompt: &quot;Enter your stealth (1-10):&quot;, &quot;5&quot;))(set: $endurance to (prompt: &quot;Enter your endurance (1-10):&quot;,&quot;5&quot;))(set: $healthVar to (prompt: &quot;Enter your health (1-10):&quot;,&quot;5&quot;))(set: $charisma to (prompt: &quot;Enter your charisma (1-10):&quot;,&quot;5&quot;))(set: $str to (num:$strength))(set: $stealth to (num:$stealthVar))(set: $end  to (num:$endurance))(set: $health to (num:$healthVar))(set: $rizz to (num:$charisma))(if: $str + $stealth + $end + $health+ $rizz &gt; 30)[You have more than 30 points allocatted, start over!!!](else:)[You have $str Strength, $stealth Stealth, $end Endurance, $health Health, and $rizz Charisma. [[Are you ready to begin?-&gt; Start]]]
+(set: $GW to true)
+(set: $HS to true)</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="475,325" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fff3bf))(set: $strength to (prompt: &quot;Enter your strength (1-10):&quot;,&quot;5&quot;))(set: $stealthVar to (prompt: &quot;Enter your stealth (1-10):&quot;, &quot;5&quot;))(set: $endurance to (prompt: &quot;Enter your endurance (1-10):&quot;,&quot;5&quot;))(set: $healthVar to (prompt: &quot;Enter your health (1-10):&quot;,&quot;5&quot;))(set: $charisma to (prompt: &quot;Enter your charisma (1-10):&quot;,&quot;5&quot;))(set: $str to (num:$strength))(set: $stealth to (num:$stealthVar))(set: $end  to (num:$endurance))(set: $health to (num:$healthVar))(set: $rizz to (num:$charisma))(if: $str + $stealth + $end + $health+ $rizz &gt; 30)[You have more than 30 points allocatted, start over!!!](else:)[You have $str Strength, $stealth Stealth, $end Endurance, $health Health, and $rizz Charisma. [[Are you ready to begin?-&gt; Start]]]
 
 </tw-passagedata><tw-passagedata pid="3" name=" Start" tags="" position="575,450" size="100,100">(text-colour:yellow)[&quot;Hey Asshole&quot;]
 
@@ -48,7 +49,7 @@ In horror, you watch as your family hole, all of your belongings, all you have e
 
 In horror, you watch as your family hole, all of your belongings, all you have ever known is gone in an instant. You’ve heard of Mechanical Termites before, but didn’t think they were this fast.
 
-[[Next -&gt;Intro 4]]</tw-passagedata><tw-passagedata pid="6" name="Intro 4" tags="" position="725,650" size="100,100">[[Lunge to Attack Landlord -&gt; I5]]
+[[Next -&gt;Intro 4]]</tw-passagedata><tw-passagedata pid="6" name="Intro 4" tags="" position="750,700" size="100,100">[[Lunge to Attack Landlord -&gt; I5]]
 (if: $HS is true)[[[Look through rubbage -&gt; I6]]]
 [[Leave (leave house location, can no longer return) -&gt; Path]]</tw-passagedata><tw-passagedata pid="7" name=" I5" tags="" position="525,800" size="100,100">(if: $str &gt; 7)[It seems you don’t know your own strength. The Landlord stands dead before you. You hear screams and sirens, and you run away, blood smeared on your hands. (-10 Necronomicon Respect) [[(leave house location, can no longer return -&gt; Path]]]
 (else:)[(text-colour:yellow)[ “I don’t think I have to remind you that assaulting a Landowner of the Metronomicon is a life sentence. I may need to remind you that” *slaps you* (-1 health) “Doing this to you” *slaps you* (-1 health) gets me nothing. Get out of my face] (-5 Metronomicon Respect)[[kicked out of house location, can no longer return-&gt; Path]]]</tw-passagedata><tw-passagedata pid="8" name=" I6" tags="" position="875,800" size="100,100">You gain 2 coins and one 1 noodle packet, but you lose 2 health)
@@ -60,11 +61,11 @@ In horror, you watch as your family hole, all of your belongings, all you have e
   (set: $Coins to ($Coins +2))
   
   You have $Coins Coins and $Ramen ramen.
- [[Next-&gt;Intro 4]]</tw-passagedata><tw-passagedata pid="9" name=" Path" tags="" position="1025,75" size="100,100">Which location will you go?
+ [[Next-&gt;Intro 4]]</tw-passagedata><tw-passagedata pid="9" name=" Path" tags="" position="900,75" size="100,100">Which location will you go?
 
 [[Wharf -&gt; Wharf]]
 [[Bakery -&gt; Bakery]]
-(if: $JunkyardEnterable is false)[[Junkyard -&gt; Junkyard]]
+(if: $JunkyardEnterable is true)[[Junkyard -&gt; Junkyard]]
 [[Gates of Metronomica -&gt; Gates]]</tw-passagedata><tw-passagedata pid="10" name=" Wharf" tags="" position="1125,350" size="100,100">&lt;img src= &quot;https://images.fineartamerica.com/images-medium-large/wharf-bob-spooner.jpg&quot;&gt;
 You arrive at the old wharf. An old crusty man greets you:
 (text-colour:cyan)[Riverman: Hey $name! I ugh… heard what happened to you. I’m sorry. Its been happening for decades, but I thought Old Davenport was gonna stick it out. I have a feeling the Metronomicons want the wharf for something. I’ve been as airtight as i can be, I’ve paid all my bills but I can tell it’s near the end. I think Davenport is a lost cause.]
