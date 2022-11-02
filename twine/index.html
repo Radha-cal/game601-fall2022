@@ -19,20 +19,9 @@ tw-story{
 (set: $name to (prompt: &quot;Enter your name:&quot;, &quot;nomen&quot;))
 [[Hi $name ! You have 30 points to put into Stealth, Endurance, Health, Sneak and Speech, max of 10 for each. -&gt;2]]
 
-(set: $Coins = 0)
-(set: $Bread = 0)
-(set: $Ramen = 0)
-(set: $Scrap = 0)
-(set: $JunkyardEnterable to true)
-(set: $GL to true)
-(set: $WC to true)
-(set: $TJ to true)
-(set: $HL to true)
-(set: $Crane to true)
-(set: $GW to true)
-(set: $HS to true)</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="475,325" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fff3bf))(set: $strength to (prompt: &quot;Enter your strength (1-10):&quot;,&quot;5&quot;))(set: $stealthVar to (prompt: &quot;Enter your stealth (1-10):&quot;, &quot;5&quot;))(set: $endurance to (prompt: &quot;Enter your endurance (1-10):&quot;,&quot;5&quot;))(set: $healthVar to (prompt: &quot;Enter your health (1-10):&quot;,&quot;5&quot;))(set: $charisma to (prompt: &quot;Enter your charisma (1-10):&quot;,&quot;5&quot;))(set: $str to (num:$strength))(set: $stealth to (num:$stealthVar))(set: $end  to (num:$endurance))(set: $health to (num:$healthVar))(set: $rizz to (num:$charisma))(if: $str + $stealth + $end + $health+ $rizz &gt; 30)[You have more than 30 points allocatted, start over!!!](else:)[You have $str Strength, $stealth Stealth, $end Endurance, $health Health, and $rizz Charisma. [[Are you ready to begin?-&gt; Start]]]
+</tw-passagedata><tw-passagedata pid="2" name="2" tags="" position="500,275" size="100,100">(enchant:?page,(text-colour:black)+(bg:#fff3bf))(set: $strength to (prompt: &quot;Enter your strength (1-10):&quot;,&quot;5&quot;))(set: $stealthVar to (prompt: &quot;Enter your stealth (1-10):&quot;, &quot;5&quot;))(set: $endurance to (prompt: &quot;Enter your endurance (1-10):&quot;,&quot;5&quot;))(set: $healthVar to (prompt: &quot;Enter your health (1-10):&quot;,&quot;5&quot;))(set: $charisma to (prompt: &quot;Enter your charisma (1-10):&quot;,&quot;5&quot;))(set: $str to (num:$strength))(set: $stealth to (num:$stealthVar))(set: $end  to (num:$endurance))(set: $health to (num:$healthVar))(set: $rizz to (num:$charisma))(if: $str + $stealth + $end + $health+ $rizz &gt; 30)[You have more than 30 points allocatted, start over!!!](else:)[You have $str Strength, $stealth Stealth, $end Endurance, $health Health, and $rizz Charisma. [[Are you ready to begin?-&gt; Start]]]
 
-</tw-passagedata><tw-passagedata pid="3" name=" Start" tags="" position="575,450" size="100,100">(text-colour:yellow)[&quot;Hey Asshole&quot;]
+</tw-passagedata><tw-passagedata pid="3" name=" Start" tags="" position="425,425" size="100,100">(text-colour:yellow)[&quot;Hey Asshole&quot;]
 
    Your sleep is interrupted by a tall lanky man.
    Though you are still woozy and your eyes are blurred by the crust of eyes in the morning, you recognize the face of your landlord, angry.
@@ -41,7 +30,7 @@ tw-story{
    
       [[ Yeah-&gt; Intro 2]]
       [[ No, get out of my face-&gt; Intro 3]]
-</tw-passagedata><tw-passagedata pid="4" name=" Intro 2" tags="" position="550,575" size="100,100">(text-colour:yellow)[&quot;Then you know why I have to do this&quot;]
+</tw-passagedata><tw-passagedata pid="4" name=" Intro 2" tags="" position="625,525" size="100,100">(text-colour:yellow)[&quot;Then you know why I have to do this&quot;]
 
 In horror, you watch as your family hole, all of your belongings, all you have ever known is gone in an instant. You’ve heard of Mechanical Termites before, but didn’t think they were this fast.
 
@@ -61,11 +50,12 @@ In horror, you watch as your family hole, all of your belongings, all you have e
   (set: $Coins to ($Coins +2))
   
   You have $Coins Coins and $Ramen ramen.
- [[Next-&gt;Intro 4]]</tw-passagedata><tw-passagedata pid="9" name=" Path" tags="" position="900,75" size="100,100">Which location will you go?
+ [[Next-&gt;Intro 4]]</tw-passagedata><tw-passagedata pid="9" name=" Path" tags="" position="825,100" size="100,100">Which location will you go?
+
 
 [[Wharf -&gt; Wharf]]
 [[Bakery -&gt; Bakery]]
-(if: $JunkyardEnterable is true)[[Junkyard -&gt; Junkyard]]
+[[Junkyard -&gt; Junkyard]]
 [[Gates of Metronomica -&gt; Gates]]</tw-passagedata><tw-passagedata pid="10" name=" Wharf" tags="" position="1125,350" size="100,100">&lt;img src= &quot;https://images.fineartamerica.com/images-medium-large/wharf-bob-spooner.jpg&quot;&gt;
 You arrive at the old wharf. An old crusty man greets you:
 (text-colour:cyan)[Riverman: Hey $name! I ugh… heard what happened to you. I’m sorry. Its been happening for decades, but I thought Old Davenport was gonna stick it out. I have a feeling the Metronomicons want the wharf for something. I’ve been as airtight as i can be, I’ve paid all my bills but I can tell it’s near the end. I think Davenport is a lost cause.]
@@ -162,14 +152,14 @@ You have $Coins coins in Total
 You have $health Health.
 (if: $health &lt;= 0)[ You [[died-&gt; Death Screen]]]
 (else:)[
-(set: $JunkyardEnterable to false)
+(set: $Junkyard to false)
 [[Leave Junkyard -&gt; Path]]]
 ]
 (else:)[[[You already pickpocketed.-&gt; Junkyard]]]</tw-passagedata><tw-passagedata pid="25" name=" Death Screen" tags="" position="1600,700" size="100,100">(text-color: &quot;red&quot;)[(text-style:&quot;smear&quot;)[YOU ARE DEAD]]
 
 &lt;img src = &quot;https://78.media.tumblr.com/2363773903a40f7e452801209d189ba3/tumblr_ne25s3PNgT1qzqoygo3_500.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="26" name=" Gate Litter" tags="" position="1775,400" size="100,100">You found a metal scrap and a coin!
-(set $Coins to ($Coins +1))
-(set $Scraps to ($Scraps +1))
+(set: $Coins to ($Coins +1))
+(set: $Scraps to ($Scraps +1))
 You have $Scraps Scraps and $Coins Coins!
 (set: $GL to false)</tw-passagedata><tw-passagedata pid="27" name=" Metronomicon Ending" tags="" position="1900,400" size="100,100">(text-color: &quot;red&quot;)[(text-style:&quot;smear&quot;)[You toil for days, weeks, months, years, decades, A week before your deathbed, you finally get your promotion, crawling to the gates only to die just before you see what is beyond. YOU ARE DEAD]]
 &lt;img src = &quot;https://i.pinimg.com/736x/d6/f2/3b/d6f23b44c5ce5693276c9640fc66f7cc--speto-black-death.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="28" name=" noodle" tags="" position="2300,225" size="100,100">(if: $Ramen &gt; 0)[
@@ -189,7 +179,20 @@ You have $Coins Coins!]
 (else:)[You don&#39;t have enough to make that sale]
 [[Back -&gt; Bakery]] </tw-passagedata><tw-passagedata pid="31" name="Title" tags="" position="150,125" size="100,100">(enchant:?page,(text-colour:blue)+(bg:(gradient: 0, 0,#fff3bf,0.5,#ffec99,1,#ffd8a8)))(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(size: 5)[FLUMEN]](align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[(size: 5)[APOCALYPTA]]
 
-(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[[[Start -&gt;Untitled Passage]]] </tw-passagedata></tw-storydata>
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[[[Start -&gt;Untitled Passage]]] 
+
+(set: $Coins = 0)
+(set: $Bread = 0)
+(set: $Ramen = 0)
+(set: $Scrap = 0)
+(set: $Junkyard to true)
+(set: $GL to true)
+(set: $WC to true)
+(set: $TJ to true)
+(set: $HL to true)
+(set: $Crane to true)
+(set: $GW to true)
+(set: $HS to true)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
