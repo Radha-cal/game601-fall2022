@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GAME 601 Portfolio (Fall 2022)</title>
+  <meta name="description" content="What I made in GAME 601 (Game Programming) at American University in Fall 2022">
+  <meta name="author" content="Radha Hosad">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="jumbotron bg-dark text-white m-0">
+    <h1 class="display-4">Radha Hosad</h1>
+    <p class="lead">My games from GAME 601 - Game Prototyping at American University in Fall 2021</p>
+  </div>
+  <div class="card">
+    <div class="card-header h3">Game Modification: RPS Fusion(Rock Paper Scissors)</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="https://radha-cal.github.io/game601-fall2022/portfolio/RPS-Fusion-cover.png">
+      </div>
+      <div class="col-6">
+        RPS Fusion is a co-op hand game in which two teams of two duke it out. 
+        If players fuse correctly, they can create powerful swords, mighty walls, 
+        and dangerous books to destroy their opponent. If they fail, their tools 
+        will break down into pebbles, scrap metal, and scrap paper, and they are 
+        at a disadvantage. To fuse or not to fuse? That is the question! .
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="https://radha-cal.github.io/game601-fall2022/portfolio/RPS-Fusion.pdf" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">(Midterm) Non-Digital Game: Revoltania</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="https://radha-cal.github.io/game601-fall2022/portfolio/Revolutatia-cover.png">
+      </div>
+      <div class="col-6">
+        Your land is under the rule of a brutal state, and your people have had enough! 
+        While many are ready to overthrow the evil state, you can’t really agree on what 
+        should come next. Can you work together long enough to take it down? When the 
+        tides have shifted, can your ideology come out on top? Send out your Rhetoricians 
+        across the land, avoid the deadly state forces, and navigate shifty alliances and 
+        secret enemies as you shape your country!
+
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="https://radha-cal.github.io/game601-fall2022/portfolio/Revolutania.pdf" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">Hypertext Fiction: YOUR TITLE HERE</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="FILE_NAME_OF_IMAGE">
+      </div>
+      <div class="col-6">
+        REPLACE THIS WITH YOUR DESCRIPTION PARAGRAPH
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./twine/index.html" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">Interactive Fiction: Minecraft Nether</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="FILE_NAME_OF_IMAGE">
+      </div>
+      <div class="col-6">
+        An inform interactive game where you explore and escape the nether from the game Minecraft
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./inform/play.html" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">Programming with p5js: Big Bang Theory Simulation</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="https://radha-cal.github.io/game601-fall2022/portfolio/BBTP5.png">
+      </div>
+      <div class="col-6">
+        A colorful explosion of randomly generated balls slowly shrinking to create 
+        a more abstract take on the universe expansion of the Big Bang
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="https://radha-cal.github.io/game601-fall2022/p5/BBT/" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header h3">Programming with p5js: Tie Fighter Shooter</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="https://radha-cal.github.io/game601-fall2022/portfolio/BBTP5.png">
+      </div>
+      <div class="col-6">
+        A colorful explosion of randomly generated balls slowly shrinking to create 
+        a more abstract take on the universe expansion of the Big Bang
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="https://radha-cal.github.io/game601-fall2022/p5/BBT/" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header h3">(Final) Digital Game: YOUR TITLE HERE</div>
+    <div class="card-body row">
+      <div class="col-4">
+        <img class="img-fluid" src="FILE_NAME_OF_IMAGE">
+      </div>
+      <div class="col-6">
+        REPLACE THIS WITH YOUR DESCRIPTION PARAGRAPH
+      </div>
+      <div class="col-2">
+        <a class="btn btn-primary btn-block" href="./final/index.html" role="button">PLAY</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
